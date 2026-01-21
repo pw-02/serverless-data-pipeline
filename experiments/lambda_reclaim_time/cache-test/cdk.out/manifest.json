@@ -1,0 +1,2913 @@
+{
+  "version": "48.0.0",
+  "artifacts": {
+    "CacheTestStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "CacheTestStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "CacheTestStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CacheTestStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/a5f3b103ffcb720b3552eb0f55c2c5fa84ebaf4c9e306b80391c29a634105db1.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "CacheTestStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "CacheTestStack.assets"
+      ],
+      "metadata": {
+        "/CacheTestStack": [
+          {
+            "type": "aws:cdk:info",
+            "data": "Number of resources: 401 is approaching allowed maximum of 500",
+            "trace": [
+              "Annotations.addMessage (C:\\Users\\pw\\AppData\\Local\\Temp\\jsii-kernel-PwzQr3\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:2066)",
+              "Annotations.addInfo (C:\\Users\\pw\\AppData\\Local\\Temp\\jsii-kernel-PwzQr3\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1443)",
+              "Stack._synthesizeTemplate (C:\\Users\\pw\\AppData\\Local\\Temp\\jsii-kernel-PwzQr3\\node_modules\\aws-cdk-lib\\core\\lib\\stack.js:1:15800)",
+              "DefaultStackSynthesizer.synthesizeTemplate (C:\\Users\\pw\\AppData\\Local\\Temp\\jsii-kernel-PwzQr3\\node_modules\\aws-cdk-lib\\core\\lib\\stack-synthesizers\\stack-synthesizer.js:1:2397)",
+              "DefaultStackSynthesizer.synthesize (C:\\Users\\pw\\AppData\\Local\\Temp\\jsii-kernel-PwzQr3\\node_modules\\aws-cdk-lib\\core\\lib\\stack-synthesizers\\default-synthesizer.js:1:8682)",
+              "C:\\Users\\pw\\AppData\\Local\\Temp\\jsii-kernel-PwzQr3\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:2:6190",
+              "visit (C:\\Users\\pw\\AppData\\Local\\Temp\\jsii-kernel-PwzQr3\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:4:372)",
+              "visit (C:\\Users\\pw\\AppData\\Local\\Temp\\jsii-kernel-PwzQr3\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:4:334)",
+              "synthesizeTree (C:\\Users\\pw\\AppData\\Local\\Temp\\jsii-kernel-PwzQr3\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:2:6032)",
+              "synthesize (C:\\Users\\pw\\AppData\\Local\\Temp\\jsii-kernel-PwzQr3\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:1:2028)",
+              "App.synth (C:\\Users\\pw\\AppData\\Local\\Temp\\jsii-kernel-PwzQr3\\node_modules\\aws-cdk-lib\\core\\lib\\stage.js:1:2912)",
+              "C:\\Users\\pw\\AppData\\Local\\Temp\\tmpk4us3_va\\lib\\program.js:295:171",
+              "Kernel._Kernel_ensureSync (C:\\Users\\pw\\AppData\\Local\\Temp\\tmpk4us3_va\\lib\\program.js:917:24)",
+              "Kernel.invoke (C:\\Users\\pw\\AppData\\Local\\Temp\\tmpk4us3_va\\lib\\program.js:295:102)",
+              "KernelHost.processRequest (C:\\Users\\pw\\AppData\\Local\\Temp\\tmpk4us3_va\\lib\\program.js:15482:36)",
+              "KernelHost.run (C:\\Users\\pw\\AppData\\Local\\Temp\\tmpk4us3_va\\lib\\program.js:15442:22)",
+              "Immediate._onImmediate (C:\\Users\\pw\\AppData\\Local\\Temp\\tmpk4us3_va\\lib\\program.js:15443:45)",
+              "process.processImmediate (node:internal/timers:483:21)"
+            ]
+          }
+        ],
+        "/CacheTestStack/Func000/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func000ServiceRoleE6FC94A7"
+          }
+        ],
+        "/CacheTestStack/Func000/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func000C4D8E4D1"
+          }
+        ],
+        "/CacheTestStack/Func001/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func001ServiceRole4A3C47D1"
+          }
+        ],
+        "/CacheTestStack/Func001/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func001E655FC7D"
+          }
+        ],
+        "/CacheTestStack/Func002/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func002ServiceRole70207C7E"
+          }
+        ],
+        "/CacheTestStack/Func002/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func00230F01744"
+          }
+        ],
+        "/CacheTestStack/Func003/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func003ServiceRole4CE6A39C"
+          }
+        ],
+        "/CacheTestStack/Func003/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func003CEBDC961"
+          }
+        ],
+        "/CacheTestStack/Func004/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func004ServiceRole7A62F162"
+          }
+        ],
+        "/CacheTestStack/Func004/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func004A92D3318"
+          }
+        ],
+        "/CacheTestStack/Func005/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func005ServiceRoleABD3D8F8"
+          }
+        ],
+        "/CacheTestStack/Func005/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func00519FD184C"
+          }
+        ],
+        "/CacheTestStack/Func006/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func006ServiceRole0D29A2D6"
+          }
+        ],
+        "/CacheTestStack/Func006/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func006B064093D"
+          }
+        ],
+        "/CacheTestStack/Func007/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func007ServiceRoleD7B1FABD"
+          }
+        ],
+        "/CacheTestStack/Func007/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func007D60C69C7"
+          }
+        ],
+        "/CacheTestStack/Func008/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func008ServiceRole47AD7BAB"
+          }
+        ],
+        "/CacheTestStack/Func008/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0086D07A54F"
+          }
+        ],
+        "/CacheTestStack/Func009/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func009ServiceRole273CE5E9"
+          }
+        ],
+        "/CacheTestStack/Func009/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func009E87A820F"
+          }
+        ],
+        "/CacheTestStack/Func010/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func010ServiceRole50F42AB6"
+          }
+        ],
+        "/CacheTestStack/Func010/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func010CFC78690"
+          }
+        ],
+        "/CacheTestStack/Func011/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func011ServiceRole31376CDA"
+          }
+        ],
+        "/CacheTestStack/Func011/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0113C6F02E3"
+          }
+        ],
+        "/CacheTestStack/Func012/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func012ServiceRole2D3EEEB1"
+          }
+        ],
+        "/CacheTestStack/Func012/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func012A22477C4"
+          }
+        ],
+        "/CacheTestStack/Func013/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func013ServiceRole30F80313"
+          }
+        ],
+        "/CacheTestStack/Func013/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func01337E8750C"
+          }
+        ],
+        "/CacheTestStack/Func014/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func014ServiceRole8DC7F919"
+          }
+        ],
+        "/CacheTestStack/Func014/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func014FF8C35EF"
+          }
+        ],
+        "/CacheTestStack/Func015/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func015ServiceRoleC807CC2D"
+          }
+        ],
+        "/CacheTestStack/Func015/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0156CBF5F7F"
+          }
+        ],
+        "/CacheTestStack/Func016/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func016ServiceRole2A550B5F"
+          }
+        ],
+        "/CacheTestStack/Func016/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func016AB9E27B5"
+          }
+        ],
+        "/CacheTestStack/Func017/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func017ServiceRole48E2CE98"
+          }
+        ],
+        "/CacheTestStack/Func017/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func017F548373E"
+          }
+        ],
+        "/CacheTestStack/Func018/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func018ServiceRoleF39D956B"
+          }
+        ],
+        "/CacheTestStack/Func018/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func018E56CD7AD"
+          }
+        ],
+        "/CacheTestStack/Func019/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func019ServiceRole90785DA0"
+          }
+        ],
+        "/CacheTestStack/Func019/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func019276C051A"
+          }
+        ],
+        "/CacheTestStack/Func020/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func020ServiceRoleB2971E08"
+          }
+        ],
+        "/CacheTestStack/Func020/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func020FAA60419"
+          }
+        ],
+        "/CacheTestStack/Func021/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func021ServiceRoleE8AE7EF1"
+          }
+        ],
+        "/CacheTestStack/Func021/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0211D93246C"
+          }
+        ],
+        "/CacheTestStack/Func022/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func022ServiceRole4623AA81"
+          }
+        ],
+        "/CacheTestStack/Func022/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0221B753CCC"
+          }
+        ],
+        "/CacheTestStack/Func023/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func023ServiceRoleBBDDD4B5"
+          }
+        ],
+        "/CacheTestStack/Func023/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func023107A5D38"
+          }
+        ],
+        "/CacheTestStack/Func024/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func024ServiceRoleA930562A"
+          }
+        ],
+        "/CacheTestStack/Func024/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0247F1E9B25"
+          }
+        ],
+        "/CacheTestStack/Func025/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func025ServiceRoleECF5DBB4"
+          }
+        ],
+        "/CacheTestStack/Func025/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0255DDE557F"
+          }
+        ],
+        "/CacheTestStack/Func026/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func026ServiceRole4085FE26"
+          }
+        ],
+        "/CacheTestStack/Func026/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func026FC6FFA2A"
+          }
+        ],
+        "/CacheTestStack/Func027/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func027ServiceRoleD0682383"
+          }
+        ],
+        "/CacheTestStack/Func027/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func027A0232E6E"
+          }
+        ],
+        "/CacheTestStack/Func028/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func028ServiceRoleE165663C"
+          }
+        ],
+        "/CacheTestStack/Func028/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func02822C2FC68"
+          }
+        ],
+        "/CacheTestStack/Func029/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func029ServiceRole1462D5F1"
+          }
+        ],
+        "/CacheTestStack/Func029/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func02911B12AFB"
+          }
+        ],
+        "/CacheTestStack/Func030/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func030ServiceRole39ADFAB3"
+          }
+        ],
+        "/CacheTestStack/Func030/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func030A099ABEB"
+          }
+        ],
+        "/CacheTestStack/Func031/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func031ServiceRole87843F1F"
+          }
+        ],
+        "/CacheTestStack/Func031/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0312172E0BA"
+          }
+        ],
+        "/CacheTestStack/Func032/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func032ServiceRole0C16C598"
+          }
+        ],
+        "/CacheTestStack/Func032/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func032391B7900"
+          }
+        ],
+        "/CacheTestStack/Func033/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func033ServiceRole1BE8627E"
+          }
+        ],
+        "/CacheTestStack/Func033/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func033CFD2E55A"
+          }
+        ],
+        "/CacheTestStack/Func034/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func034ServiceRoleC62FAED3"
+          }
+        ],
+        "/CacheTestStack/Func034/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func034B2E46352"
+          }
+        ],
+        "/CacheTestStack/Func035/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func035ServiceRoleFCFAC5A7"
+          }
+        ],
+        "/CacheTestStack/Func035/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func03523BDAC98"
+          }
+        ],
+        "/CacheTestStack/Func036/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func036ServiceRole45B2E463"
+          }
+        ],
+        "/CacheTestStack/Func036/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func03606860AC1"
+          }
+        ],
+        "/CacheTestStack/Func037/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func037ServiceRoleC08A48A2"
+          }
+        ],
+        "/CacheTestStack/Func037/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0374AA75B1D"
+          }
+        ],
+        "/CacheTestStack/Func038/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func038ServiceRole4118281E"
+          }
+        ],
+        "/CacheTestStack/Func038/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0384A5806BE"
+          }
+        ],
+        "/CacheTestStack/Func039/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func039ServiceRoleE46620DF"
+          }
+        ],
+        "/CacheTestStack/Func039/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func039BFF6CC57"
+          }
+        ],
+        "/CacheTestStack/Func040/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func040ServiceRole240E52FC"
+          }
+        ],
+        "/CacheTestStack/Func040/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func04026ABE686"
+          }
+        ],
+        "/CacheTestStack/Func041/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func041ServiceRole11E028DA"
+          }
+        ],
+        "/CacheTestStack/Func041/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0414968276E"
+          }
+        ],
+        "/CacheTestStack/Func042/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func042ServiceRoleBE622AF5"
+          }
+        ],
+        "/CacheTestStack/Func042/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0425CF00560"
+          }
+        ],
+        "/CacheTestStack/Func043/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func043ServiceRoleD0E483A5"
+          }
+        ],
+        "/CacheTestStack/Func043/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func043B975F7FF"
+          }
+        ],
+        "/CacheTestStack/Func044/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func044ServiceRole7C5C1535"
+          }
+        ],
+        "/CacheTestStack/Func044/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func044F94CC8FD"
+          }
+        ],
+        "/CacheTestStack/Func045/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func045ServiceRole486B5A53"
+          }
+        ],
+        "/CacheTestStack/Func045/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0452FA11BD8"
+          }
+        ],
+        "/CacheTestStack/Func046/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func046ServiceRole3FFEF218"
+          }
+        ],
+        "/CacheTestStack/Func046/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func04683C48B19"
+          }
+        ],
+        "/CacheTestStack/Func047/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func047ServiceRoleC7AFD5EA"
+          }
+        ],
+        "/CacheTestStack/Func047/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0475AB35EA0"
+          }
+        ],
+        "/CacheTestStack/Func048/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func048ServiceRole561D92BC"
+          }
+        ],
+        "/CacheTestStack/Func048/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func04808771A43"
+          }
+        ],
+        "/CacheTestStack/Func049/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func049ServiceRoleC64E162F"
+          }
+        ],
+        "/CacheTestStack/Func049/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func049986E88BE"
+          }
+        ],
+        "/CacheTestStack/Func050/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func050ServiceRole9C5F4F23"
+          }
+        ],
+        "/CacheTestStack/Func050/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0507EBD6EC9"
+          }
+        ],
+        "/CacheTestStack/Func051/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func051ServiceRole4D03484D"
+          }
+        ],
+        "/CacheTestStack/Func051/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func051EAE5D02C"
+          }
+        ],
+        "/CacheTestStack/Func052/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func052ServiceRoleD7E6FAFB"
+          }
+        ],
+        "/CacheTestStack/Func052/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0526189B4ED"
+          }
+        ],
+        "/CacheTestStack/Func053/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func053ServiceRoleD4AB1281"
+          }
+        ],
+        "/CacheTestStack/Func053/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func05395D44E44"
+          }
+        ],
+        "/CacheTestStack/Func054/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func054ServiceRoleAF87AC6A"
+          }
+        ],
+        "/CacheTestStack/Func054/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func054DC88A592"
+          }
+        ],
+        "/CacheTestStack/Func055/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func055ServiceRole02210CAA"
+          }
+        ],
+        "/CacheTestStack/Func055/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func055B3928405"
+          }
+        ],
+        "/CacheTestStack/Func056/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func056ServiceRoleD5B23C83"
+          }
+        ],
+        "/CacheTestStack/Func056/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0565F11AC28"
+          }
+        ],
+        "/CacheTestStack/Func057/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func057ServiceRole90E93A38"
+          }
+        ],
+        "/CacheTestStack/Func057/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func057EFA81F4F"
+          }
+        ],
+        "/CacheTestStack/Func058/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func058ServiceRole3B3C8B95"
+          }
+        ],
+        "/CacheTestStack/Func058/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0581A5B121A"
+          }
+        ],
+        "/CacheTestStack/Func059/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func059ServiceRoleC4BC468C"
+          }
+        ],
+        "/CacheTestStack/Func059/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func059EA24A99D"
+          }
+        ],
+        "/CacheTestStack/Func060/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func060ServiceRole02E4908B"
+          }
+        ],
+        "/CacheTestStack/Func060/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func060BC70337E"
+          }
+        ],
+        "/CacheTestStack/Func061/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func061ServiceRoleB6B0A897"
+          }
+        ],
+        "/CacheTestStack/Func061/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func061310F7041"
+          }
+        ],
+        "/CacheTestStack/Func062/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func062ServiceRoleAB77FF1E"
+          }
+        ],
+        "/CacheTestStack/Func062/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func062CF4C073D"
+          }
+        ],
+        "/CacheTestStack/Func063/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func063ServiceRole1739C280"
+          }
+        ],
+        "/CacheTestStack/Func063/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0639E158A3A"
+          }
+        ],
+        "/CacheTestStack/Func064/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func064ServiceRole478DF6B4"
+          }
+        ],
+        "/CacheTestStack/Func064/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0646E0236EC"
+          }
+        ],
+        "/CacheTestStack/Func065/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func065ServiceRole131B84C2"
+          }
+        ],
+        "/CacheTestStack/Func065/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0653E252182"
+          }
+        ],
+        "/CacheTestStack/Func066/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func066ServiceRole5645208A"
+          }
+        ],
+        "/CacheTestStack/Func066/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func066FA0CB935"
+          }
+        ],
+        "/CacheTestStack/Func067/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func067ServiceRoleBD018808"
+          }
+        ],
+        "/CacheTestStack/Func067/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func06776C77D99"
+          }
+        ],
+        "/CacheTestStack/Func068/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func068ServiceRole1F339402"
+          }
+        ],
+        "/CacheTestStack/Func068/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func06895B25878"
+          }
+        ],
+        "/CacheTestStack/Func069/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func069ServiceRole51344F44"
+          }
+        ],
+        "/CacheTestStack/Func069/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func069C2A3832E"
+          }
+        ],
+        "/CacheTestStack/Func070/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func070ServiceRoleC9E6E517"
+          }
+        ],
+        "/CacheTestStack/Func070/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0701B40A7D7"
+          }
+        ],
+        "/CacheTestStack/Func071/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func071ServiceRoleD478CFA8"
+          }
+        ],
+        "/CacheTestStack/Func071/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func071AD5A2150"
+          }
+        ],
+        "/CacheTestStack/Func072/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func072ServiceRole9E98E694"
+          }
+        ],
+        "/CacheTestStack/Func072/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func07204442E35"
+          }
+        ],
+        "/CacheTestStack/Func073/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func073ServiceRoleD4ADC458"
+          }
+        ],
+        "/CacheTestStack/Func073/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func07323066756"
+          }
+        ],
+        "/CacheTestStack/Func074/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func074ServiceRole335A6462"
+          }
+        ],
+        "/CacheTestStack/Func074/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func07437A3BE43"
+          }
+        ],
+        "/CacheTestStack/Func075/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func075ServiceRole4B019013"
+          }
+        ],
+        "/CacheTestStack/Func075/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0757E073CFC"
+          }
+        ],
+        "/CacheTestStack/Func076/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func076ServiceRoleFD1C9A94"
+          }
+        ],
+        "/CacheTestStack/Func076/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0765C48362F"
+          }
+        ],
+        "/CacheTestStack/Func077/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func077ServiceRoleF3193E8A"
+          }
+        ],
+        "/CacheTestStack/Func077/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0770A3E5521"
+          }
+        ],
+        "/CacheTestStack/Func078/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func078ServiceRoleE1C2E512"
+          }
+        ],
+        "/CacheTestStack/Func078/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0781474CFD4"
+          }
+        ],
+        "/CacheTestStack/Func079/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func079ServiceRoleABC44CF3"
+          }
+        ],
+        "/CacheTestStack/Func079/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func079EBA21271"
+          }
+        ],
+        "/CacheTestStack/Func080/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func080ServiceRole36B37851"
+          }
+        ],
+        "/CacheTestStack/Func080/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func08081460673"
+          }
+        ],
+        "/CacheTestStack/Func081/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func081ServiceRole0AF428D0"
+          }
+        ],
+        "/CacheTestStack/Func081/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func08185A9251D"
+          }
+        ],
+        "/CacheTestStack/Func082/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func082ServiceRole9352E0B4"
+          }
+        ],
+        "/CacheTestStack/Func082/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func08252324E0E"
+          }
+        ],
+        "/CacheTestStack/Func083/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func083ServiceRole7D481B9F"
+          }
+        ],
+        "/CacheTestStack/Func083/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func083B8CF8AED"
+          }
+        ],
+        "/CacheTestStack/Func084/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func084ServiceRole1CAF7BC8"
+          }
+        ],
+        "/CacheTestStack/Func084/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0845F68DABB"
+          }
+        ],
+        "/CacheTestStack/Func085/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func085ServiceRoleE581E5F1"
+          }
+        ],
+        "/CacheTestStack/Func085/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0853F019B0B"
+          }
+        ],
+        "/CacheTestStack/Func086/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func086ServiceRole3080D58D"
+          }
+        ],
+        "/CacheTestStack/Func086/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func086542EB0B1"
+          }
+        ],
+        "/CacheTestStack/Func087/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func087ServiceRole027D63D6"
+          }
+        ],
+        "/CacheTestStack/Func087/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func087777CBFF9"
+          }
+        ],
+        "/CacheTestStack/Func088/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func088ServiceRoleBBD528EE"
+          }
+        ],
+        "/CacheTestStack/Func088/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func088BD426036"
+          }
+        ],
+        "/CacheTestStack/Func089/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func089ServiceRole55699B80"
+          }
+        ],
+        "/CacheTestStack/Func089/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func089E1AD1DC8"
+          }
+        ],
+        "/CacheTestStack/Func090/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func090ServiceRole418D436C"
+          }
+        ],
+        "/CacheTestStack/Func090/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func090994828AD"
+          }
+        ],
+        "/CacheTestStack/Func091/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func091ServiceRole86362156"
+          }
+        ],
+        "/CacheTestStack/Func091/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0911F7900B3"
+          }
+        ],
+        "/CacheTestStack/Func092/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func092ServiceRole69AC2046"
+          }
+        ],
+        "/CacheTestStack/Func092/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func092A5292ED6"
+          }
+        ],
+        "/CacheTestStack/Func093/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func093ServiceRoleF88D3EB1"
+          }
+        ],
+        "/CacheTestStack/Func093/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func09391753EBF"
+          }
+        ],
+        "/CacheTestStack/Func094/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func094ServiceRoleEE57AF10"
+          }
+        ],
+        "/CacheTestStack/Func094/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func09401711D20"
+          }
+        ],
+        "/CacheTestStack/Func095/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func095ServiceRole0B0F4F96"
+          }
+        ],
+        "/CacheTestStack/Func095/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0954E222320"
+          }
+        ],
+        "/CacheTestStack/Func096/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func096ServiceRole93CC3646"
+          }
+        ],
+        "/CacheTestStack/Func096/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0960A5074C5"
+          }
+        ],
+        "/CacheTestStack/Func097/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func097ServiceRoleCA01D270"
+          }
+        ],
+        "/CacheTestStack/Func097/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0978FC8207F"
+          }
+        ],
+        "/CacheTestStack/Func098/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func098ServiceRole3BFA363E"
+          }
+        ],
+        "/CacheTestStack/Func098/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func0981E640B94"
+          }
+        ],
+        "/CacheTestStack/Func099/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func099ServiceRoleF2AF88D1"
+          }
+        ],
+        "/CacheTestStack/Func099/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func099DE2F8D7B"
+          }
+        ],
+        "/CacheTestStack/Func100/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func100ServiceRole67516FD6"
+          }
+        ],
+        "/CacheTestStack/Func100/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func100D6076CA0"
+          }
+        ],
+        "/CacheTestStack/Func101/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func101ServiceRole2108B8C6"
+          }
+        ],
+        "/CacheTestStack/Func101/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1013C3DF97B"
+          }
+        ],
+        "/CacheTestStack/Func102/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func102ServiceRoleBD39180A"
+          }
+        ],
+        "/CacheTestStack/Func102/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1025840F864"
+          }
+        ],
+        "/CacheTestStack/Func103/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func103ServiceRoleD70D1BFE"
+          }
+        ],
+        "/CacheTestStack/Func103/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1030562A90D"
+          }
+        ],
+        "/CacheTestStack/Func104/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func104ServiceRole4D5385FD"
+          }
+        ],
+        "/CacheTestStack/Func104/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1048C325FEC"
+          }
+        ],
+        "/CacheTestStack/Func105/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func105ServiceRole8A8EB0DD"
+          }
+        ],
+        "/CacheTestStack/Func105/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func105717DF751"
+          }
+        ],
+        "/CacheTestStack/Func106/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func106ServiceRole416C18AD"
+          }
+        ],
+        "/CacheTestStack/Func106/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func10662C3FC91"
+          }
+        ],
+        "/CacheTestStack/Func107/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func107ServiceRole5E92A7E1"
+          }
+        ],
+        "/CacheTestStack/Func107/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1071C333771"
+          }
+        ],
+        "/CacheTestStack/Func108/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func108ServiceRole20E7C58C"
+          }
+        ],
+        "/CacheTestStack/Func108/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1088A3398E5"
+          }
+        ],
+        "/CacheTestStack/Func109/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func109ServiceRoleE830C465"
+          }
+        ],
+        "/CacheTestStack/Func109/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func109082B77FF"
+          }
+        ],
+        "/CacheTestStack/Func110/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func110ServiceRole5A89C95F"
+          }
+        ],
+        "/CacheTestStack/Func110/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func110D30D77F8"
+          }
+        ],
+        "/CacheTestStack/Func111/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func111ServiceRole81DF977C"
+          }
+        ],
+        "/CacheTestStack/Func111/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func111B12260E3"
+          }
+        ],
+        "/CacheTestStack/Func112/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func112ServiceRoleC47A19AF"
+          }
+        ],
+        "/CacheTestStack/Func112/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1123C0DA614"
+          }
+        ],
+        "/CacheTestStack/Func113/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func113ServiceRole851D8A91"
+          }
+        ],
+        "/CacheTestStack/Func113/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func113AD2E593E"
+          }
+        ],
+        "/CacheTestStack/Func114/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func114ServiceRole4AF64E5C"
+          }
+        ],
+        "/CacheTestStack/Func114/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func114BC94A331"
+          }
+        ],
+        "/CacheTestStack/Func115/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func115ServiceRoleD5815FD5"
+          }
+        ],
+        "/CacheTestStack/Func115/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1157F968B0F"
+          }
+        ],
+        "/CacheTestStack/Func116/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func116ServiceRole9BFEC02A"
+          }
+        ],
+        "/CacheTestStack/Func116/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func116B4030BD4"
+          }
+        ],
+        "/CacheTestStack/Func117/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func117ServiceRole677D2355"
+          }
+        ],
+        "/CacheTestStack/Func117/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1175E8027B8"
+          }
+        ],
+        "/CacheTestStack/Func118/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func118ServiceRoleC6CA38A4"
+          }
+        ],
+        "/CacheTestStack/Func118/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func118D7C92A87"
+          }
+        ],
+        "/CacheTestStack/Func119/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func119ServiceRoleEF9BAB9F"
+          }
+        ],
+        "/CacheTestStack/Func119/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1193BC79BA5"
+          }
+        ],
+        "/CacheTestStack/Func120/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func120ServiceRole0069218F"
+          }
+        ],
+        "/CacheTestStack/Func120/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1202621516F"
+          }
+        ],
+        "/CacheTestStack/Func121/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func121ServiceRole9AB18B38"
+          }
+        ],
+        "/CacheTestStack/Func121/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func12166D0B85E"
+          }
+        ],
+        "/CacheTestStack/Func122/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func122ServiceRole6B3588A3"
+          }
+        ],
+        "/CacheTestStack/Func122/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func12202AEF1AC"
+          }
+        ],
+        "/CacheTestStack/Func123/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func123ServiceRole2623C41E"
+          }
+        ],
+        "/CacheTestStack/Func123/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func123EB38EEFE"
+          }
+        ],
+        "/CacheTestStack/Func124/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func124ServiceRoleC285F449"
+          }
+        ],
+        "/CacheTestStack/Func124/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func124125F2EA2"
+          }
+        ],
+        "/CacheTestStack/Func125/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func125ServiceRole70C9EDF1"
+          }
+        ],
+        "/CacheTestStack/Func125/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func125F27B7C86"
+          }
+        ],
+        "/CacheTestStack/Func126/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func126ServiceRole618D9520"
+          }
+        ],
+        "/CacheTestStack/Func126/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func126C1CAE476"
+          }
+        ],
+        "/CacheTestStack/Func127/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func127ServiceRole4C530FE9"
+          }
+        ],
+        "/CacheTestStack/Func127/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1277E108301"
+          }
+        ],
+        "/CacheTestStack/Func128/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func128ServiceRole81C3A53C"
+          }
+        ],
+        "/CacheTestStack/Func128/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func12817E8C5FA"
+          }
+        ],
+        "/CacheTestStack/Func129/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func129ServiceRole5D46A410"
+          }
+        ],
+        "/CacheTestStack/Func129/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1291B261205"
+          }
+        ],
+        "/CacheTestStack/Func130/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func130ServiceRoleB9C11F49"
+          }
+        ],
+        "/CacheTestStack/Func130/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func130DE3DDC9E"
+          }
+        ],
+        "/CacheTestStack/Func131/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func131ServiceRole9C6FB2A2"
+          }
+        ],
+        "/CacheTestStack/Func131/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func131EAE2304D"
+          }
+        ],
+        "/CacheTestStack/Func132/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func132ServiceRole0843078A"
+          }
+        ],
+        "/CacheTestStack/Func132/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1326B8C20A4"
+          }
+        ],
+        "/CacheTestStack/Func133/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func133ServiceRole4DFED57B"
+          }
+        ],
+        "/CacheTestStack/Func133/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func133A7EA822E"
+          }
+        ],
+        "/CacheTestStack/Func134/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func134ServiceRole94609750"
+          }
+        ],
+        "/CacheTestStack/Func134/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func13460D8716A"
+          }
+        ],
+        "/CacheTestStack/Func135/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func135ServiceRole6105F481"
+          }
+        ],
+        "/CacheTestStack/Func135/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func135FCA7EC45"
+          }
+        ],
+        "/CacheTestStack/Func136/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func136ServiceRole4CB26D2D"
+          }
+        ],
+        "/CacheTestStack/Func136/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1366E02B28C"
+          }
+        ],
+        "/CacheTestStack/Func137/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func137ServiceRole60187140"
+          }
+        ],
+        "/CacheTestStack/Func137/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func137DA57C491"
+          }
+        ],
+        "/CacheTestStack/Func138/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func138ServiceRole96F0B264"
+          }
+        ],
+        "/CacheTestStack/Func138/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1383C70D869"
+          }
+        ],
+        "/CacheTestStack/Func139/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func139ServiceRoleAE65AF3E"
+          }
+        ],
+        "/CacheTestStack/Func139/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1399784FE16"
+          }
+        ],
+        "/CacheTestStack/Func140/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func140ServiceRoleDB5C9F5E"
+          }
+        ],
+        "/CacheTestStack/Func140/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1401E114A59"
+          }
+        ],
+        "/CacheTestStack/Func141/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func141ServiceRole549709EC"
+          }
+        ],
+        "/CacheTestStack/Func141/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1416E9988D3"
+          }
+        ],
+        "/CacheTestStack/Func142/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func142ServiceRoleFD98F445"
+          }
+        ],
+        "/CacheTestStack/Func142/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func142A9F93E9A"
+          }
+        ],
+        "/CacheTestStack/Func143/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func143ServiceRoleB13AAF5D"
+          }
+        ],
+        "/CacheTestStack/Func143/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1432E16FEE5"
+          }
+        ],
+        "/CacheTestStack/Func144/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func144ServiceRole131E37BA"
+          }
+        ],
+        "/CacheTestStack/Func144/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func144A0B3F43D"
+          }
+        ],
+        "/CacheTestStack/Func145/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func145ServiceRole904038C9"
+          }
+        ],
+        "/CacheTestStack/Func145/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func145CC64CD0B"
+          }
+        ],
+        "/CacheTestStack/Func146/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func146ServiceRole408558E1"
+          }
+        ],
+        "/CacheTestStack/Func146/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func146A1EB09D8"
+          }
+        ],
+        "/CacheTestStack/Func147/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func147ServiceRole9596A19D"
+          }
+        ],
+        "/CacheTestStack/Func147/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1477EEC1F61"
+          }
+        ],
+        "/CacheTestStack/Func148/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func148ServiceRoleC73BA1B9"
+          }
+        ],
+        "/CacheTestStack/Func148/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1482C8BAEAA"
+          }
+        ],
+        "/CacheTestStack/Func149/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func149ServiceRole40A66649"
+          }
+        ],
+        "/CacheTestStack/Func149/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func14944F520A1"
+          }
+        ],
+        "/CacheTestStack/Func150/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func150ServiceRole5C9B8628"
+          }
+        ],
+        "/CacheTestStack/Func150/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func15078DF2132"
+          }
+        ],
+        "/CacheTestStack/Func151/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func151ServiceRoleE5454668"
+          }
+        ],
+        "/CacheTestStack/Func151/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1516379986B"
+          }
+        ],
+        "/CacheTestStack/Func152/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func152ServiceRole12CF7EFC"
+          }
+        ],
+        "/CacheTestStack/Func152/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1528D688A49"
+          }
+        ],
+        "/CacheTestStack/Func153/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func153ServiceRoleF0B0E506"
+          }
+        ],
+        "/CacheTestStack/Func153/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func153A0C4BDA5"
+          }
+        ],
+        "/CacheTestStack/Func154/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func154ServiceRoleCD27CE23"
+          }
+        ],
+        "/CacheTestStack/Func154/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func154C8817999"
+          }
+        ],
+        "/CacheTestStack/Func155/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func155ServiceRole054A6733"
+          }
+        ],
+        "/CacheTestStack/Func155/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func15514F0F43B"
+          }
+        ],
+        "/CacheTestStack/Func156/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func156ServiceRoleC9B11417"
+          }
+        ],
+        "/CacheTestStack/Func156/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func156FC454147"
+          }
+        ],
+        "/CacheTestStack/Func157/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func157ServiceRoleAA9FA10A"
+          }
+        ],
+        "/CacheTestStack/Func157/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func157BD40F361"
+          }
+        ],
+        "/CacheTestStack/Func158/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func158ServiceRole0BF21E5C"
+          }
+        ],
+        "/CacheTestStack/Func158/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func15839DB517D"
+          }
+        ],
+        "/CacheTestStack/Func159/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func159ServiceRole0620B985"
+          }
+        ],
+        "/CacheTestStack/Func159/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1594432EAE8"
+          }
+        ],
+        "/CacheTestStack/Func160/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func160ServiceRole65CF0F95"
+          }
+        ],
+        "/CacheTestStack/Func160/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func160EB77BDDC"
+          }
+        ],
+        "/CacheTestStack/Func161/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func161ServiceRoleBA370CBF"
+          }
+        ],
+        "/CacheTestStack/Func161/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1614BC684B1"
+          }
+        ],
+        "/CacheTestStack/Func162/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func162ServiceRoleA4F8FD08"
+          }
+        ],
+        "/CacheTestStack/Func162/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func16265501EE2"
+          }
+        ],
+        "/CacheTestStack/Func163/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func163ServiceRoleEA66624A"
+          }
+        ],
+        "/CacheTestStack/Func163/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1636A5AD1F8"
+          }
+        ],
+        "/CacheTestStack/Func164/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func164ServiceRole1BB08D1B"
+          }
+        ],
+        "/CacheTestStack/Func164/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func164C1782396"
+          }
+        ],
+        "/CacheTestStack/Func165/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func165ServiceRole08C2D2A0"
+          }
+        ],
+        "/CacheTestStack/Func165/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func165EA4DAA47"
+          }
+        ],
+        "/CacheTestStack/Func166/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func166ServiceRole2392935B"
+          }
+        ],
+        "/CacheTestStack/Func166/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func166C91E7AA4"
+          }
+        ],
+        "/CacheTestStack/Func167/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func167ServiceRole3222CBE7"
+          }
+        ],
+        "/CacheTestStack/Func167/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func167E90647EA"
+          }
+        ],
+        "/CacheTestStack/Func168/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func168ServiceRoleDBCEA93A"
+          }
+        ],
+        "/CacheTestStack/Func168/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func168B953543A"
+          }
+        ],
+        "/CacheTestStack/Func169/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func169ServiceRoleD0E94DF3"
+          }
+        ],
+        "/CacheTestStack/Func169/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func16909919BAA"
+          }
+        ],
+        "/CacheTestStack/Func170/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func170ServiceRoleAEBBCCC6"
+          }
+        ],
+        "/CacheTestStack/Func170/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1708FBBDD1A"
+          }
+        ],
+        "/CacheTestStack/Func171/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func171ServiceRoleF452A3BA"
+          }
+        ],
+        "/CacheTestStack/Func171/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func171D8561D8C"
+          }
+        ],
+        "/CacheTestStack/Func172/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func172ServiceRole4BA571F2"
+          }
+        ],
+        "/CacheTestStack/Func172/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func17223E9B8A8"
+          }
+        ],
+        "/CacheTestStack/Func173/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func173ServiceRole5A7B0090"
+          }
+        ],
+        "/CacheTestStack/Func173/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func173C1287F90"
+          }
+        ],
+        "/CacheTestStack/Func174/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func174ServiceRoleC9836AFC"
+          }
+        ],
+        "/CacheTestStack/Func174/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func17450C8108C"
+          }
+        ],
+        "/CacheTestStack/Func175/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func175ServiceRole299E6D86"
+          }
+        ],
+        "/CacheTestStack/Func175/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1752A79A969"
+          }
+        ],
+        "/CacheTestStack/Func176/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func176ServiceRoleBA3CDF9B"
+          }
+        ],
+        "/CacheTestStack/Func176/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func176FB67C19F"
+          }
+        ],
+        "/CacheTestStack/Func177/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func177ServiceRole17C48E09"
+          }
+        ],
+        "/CacheTestStack/Func177/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func177A6620ED5"
+          }
+        ],
+        "/CacheTestStack/Func178/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func178ServiceRoleB6D1C585"
+          }
+        ],
+        "/CacheTestStack/Func178/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func178652E7D09"
+          }
+        ],
+        "/CacheTestStack/Func179/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func179ServiceRole25E4D4D5"
+          }
+        ],
+        "/CacheTestStack/Func179/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func179D5056F08"
+          }
+        ],
+        "/CacheTestStack/Func180/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func180ServiceRole0912D1D3"
+          }
+        ],
+        "/CacheTestStack/Func180/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1807806EA80"
+          }
+        ],
+        "/CacheTestStack/Func181/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func181ServiceRole7B19159D"
+          }
+        ],
+        "/CacheTestStack/Func181/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1815A923C74"
+          }
+        ],
+        "/CacheTestStack/Func182/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func182ServiceRoleC5E96CF2"
+          }
+        ],
+        "/CacheTestStack/Func182/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func182F798E130"
+          }
+        ],
+        "/CacheTestStack/Func183/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func183ServiceRole0771A224"
+          }
+        ],
+        "/CacheTestStack/Func183/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func18310E117FA"
+          }
+        ],
+        "/CacheTestStack/Func184/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func184ServiceRoleBA9E7EEA"
+          }
+        ],
+        "/CacheTestStack/Func184/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func184E76DBCAC"
+          }
+        ],
+        "/CacheTestStack/Func185/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func185ServiceRole59331E19"
+          }
+        ],
+        "/CacheTestStack/Func185/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func18584C9CC13"
+          }
+        ],
+        "/CacheTestStack/Func186/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func186ServiceRoleF8617371"
+          }
+        ],
+        "/CacheTestStack/Func186/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1864C54C058"
+          }
+        ],
+        "/CacheTestStack/Func187/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func187ServiceRole376F5D4B"
+          }
+        ],
+        "/CacheTestStack/Func187/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func18790E525DE"
+          }
+        ],
+        "/CacheTestStack/Func188/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func188ServiceRoleE6F42B06"
+          }
+        ],
+        "/CacheTestStack/Func188/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func18895150E25"
+          }
+        ],
+        "/CacheTestStack/Func189/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func189ServiceRole839B04A9"
+          }
+        ],
+        "/CacheTestStack/Func189/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func189CB6E6917"
+          }
+        ],
+        "/CacheTestStack/Func190/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func190ServiceRoleF4F413DD"
+          }
+        ],
+        "/CacheTestStack/Func190/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func19044144CA8"
+          }
+        ],
+        "/CacheTestStack/Func191/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func191ServiceRole6BAAFF85"
+          }
+        ],
+        "/CacheTestStack/Func191/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1915DC2684B"
+          }
+        ],
+        "/CacheTestStack/Func192/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func192ServiceRole4CF2D39A"
+          }
+        ],
+        "/CacheTestStack/Func192/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1928980EDCA"
+          }
+        ],
+        "/CacheTestStack/Func193/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func193ServiceRole2C279F8D"
+          }
+        ],
+        "/CacheTestStack/Func193/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func19327E1B989"
+          }
+        ],
+        "/CacheTestStack/Func194/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func194ServiceRoleE3F13359"
+          }
+        ],
+        "/CacheTestStack/Func194/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1943D60067A"
+          }
+        ],
+        "/CacheTestStack/Func195/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func195ServiceRoleDCDD60D4"
+          }
+        ],
+        "/CacheTestStack/Func195/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func195098AD9B6"
+          }
+        ],
+        "/CacheTestStack/Func196/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func196ServiceRole1BA672BE"
+          }
+        ],
+        "/CacheTestStack/Func196/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func19635F18B93"
+          }
+        ],
+        "/CacheTestStack/Func197/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func197ServiceRoleF29AD2C0"
+          }
+        ],
+        "/CacheTestStack/Func197/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func19733C010EE"
+          }
+        ],
+        "/CacheTestStack/Func198/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func198ServiceRole191D91EE"
+          }
+        ],
+        "/CacheTestStack/Func198/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func1980BCA39DF"
+          }
+        ],
+        "/CacheTestStack/Func199/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func199ServiceRoleCD2C3CBB"
+          }
+        ],
+        "/CacheTestStack/Func199/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func199D0F37B73"
+          }
+        ],
+        "/CacheTestStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/CacheTestStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/CacheTestStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/CacheTestStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "CacheTestStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "aws-cdk-lib/feature-flag-report": {
+      "type": "cdk:feature-flag-report",
+      "properties": {
+        "module": "aws-cdk-lib",
+        "flags": {
+          "@aws-cdk/aws-signer:signingProfileNamePassedToCfn": {
+            "recommendedValue": true,
+            "explanation": "Pass signingProfileName to CfnSigningProfile"
+          },
+          "@aws-cdk/core:newStyleStackSynthesis": {
+            "recommendedValue": true,
+            "explanation": "Switch to new stack synthesis method which enables CI/CD",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/core:stackRelativeExports": {
+            "recommendedValue": true,
+            "explanation": "Name exports based on the construct paths relative to the stack, rather than the global construct path",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-ecs-patterns:secGroupsDisablesImplicitOpenListener": {
+            "recommendedValue": true,
+            "explanation": "Disable implicit openListener when custom security groups are provided"
+          },
+          "@aws-cdk/aws-rds:lowercaseDbIdentifier": {
+            "recommendedValue": true,
+            "explanation": "Force lowercasing of RDS Cluster names in CDK",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-apigateway:usagePlanKeyOrderInsensitiveId": {
+            "recommendedValue": true,
+            "explanation": "Allow adding/removing multiple UsagePlanKeys independently",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-lambda:recognizeVersionProps": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to opt in to the updated logical id calculation for Lambda Version created using the  `fn.currentVersion`.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-lambda:recognizeLayerVersion": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to opt in to the updated logical id calculation for Lambda Version created using the `fn.currentVersion`."
+          },
+          "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to have cloudfront distributions use the security policy TLSv1.2_2021 by default.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/core:checkSecretUsage": {
+            "recommendedValue": true,
+            "explanation": "Enable this flag to make it impossible to accidentally use SecretValues in unsafe locations"
+          },
+          "@aws-cdk/core:target-partitions": {
+            "recommendedValue": [
+              "aws",
+              "aws-cn"
+            ],
+            "explanation": "What regions to include in lookup tables of environment agnostic stacks"
+          },
+          "@aws-cdk-containers/ecs-service-extensions:enableDefaultLogDriver": {
+            "recommendedValue": true,
+            "explanation": "ECS extensions will automatically add an `awslogs` driver if no logging is specified"
+          },
+          "@aws-cdk/aws-ec2:uniqueImdsv2TemplateName": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to have Launch Templates generated by the `InstanceRequireImdsv2Aspect` use unique names."
+          },
+          "@aws-cdk/aws-ecs:arnFormatIncludesClusterName": {
+            "recommendedValue": true,
+            "explanation": "ARN format used by ECS. In the new ARN format, the cluster name is part of the resource ID."
+          },
+          "@aws-cdk/aws-iam:minimizePolicies": {
+            "recommendedValue": true,
+            "explanation": "Minimize IAM policies by combining Statements"
+          },
+          "@aws-cdk/core:validateSnapshotRemovalPolicy": {
+            "recommendedValue": true,
+            "explanation": "Error on snapshot removal policies on resources that do not support it."
+          },
+          "@aws-cdk/aws-codepipeline:crossAccountKeyAliasStackSafeResourceName": {
+            "recommendedValue": true,
+            "explanation": "Generate key aliases that include the stack name"
+          },
+          "@aws-cdk/aws-s3:createDefaultLoggingPolicy": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to create an S3 bucket policy by default in cases where an AWS service would automatically create the Policy if one does not exist."
+          },
+          "@aws-cdk/aws-sns-subscriptions:restrictSqsDescryption": {
+            "recommendedValue": true,
+            "explanation": "Restrict KMS key policy for encrypted Queues a bit more"
+          },
+          "@aws-cdk/aws-apigateway:disableCloudWatchRole": {
+            "recommendedValue": true,
+            "explanation": "Make default CloudWatch Role behavior safe for multiple API Gateways in one environment"
+          },
+          "@aws-cdk/core:enablePartitionLiterals": {
+            "recommendedValue": true,
+            "explanation": "Make ARNs concrete if AWS partition is known"
+          },
+          "@aws-cdk/aws-events:eventsTargetQueueSameAccount": {
+            "recommendedValue": true,
+            "explanation": "Event Rules may only push to encrypted SQS queues in the same account"
+          },
+          "@aws-cdk/aws-ecs:disableExplicitDeploymentControllerForCircuitBreaker": {
+            "recommendedValue": true,
+            "explanation": "Avoid setting the \"ECS\" deployment controller when adding a circuit breaker"
+          },
+          "@aws-cdk/aws-iam:importedRoleStackSafeDefaultPolicyName": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature to create default policy names for imported roles that depend on the stack the role is in."
+          },
+          "@aws-cdk/aws-s3:serverAccessLogsUseBucketPolicy": {
+            "recommendedValue": true,
+            "explanation": "Use S3 Bucket Policy instead of ACLs for Server Access Logging"
+          },
+          "@aws-cdk/aws-route53-patters:useCertificate": {
+            "recommendedValue": true,
+            "explanation": "Use the official `Certificate` resource instead of `DnsValidatedCertificate`"
+          },
+          "@aws-cdk/customresources:installLatestAwsSdkDefault": {
+            "recommendedValue": false,
+            "explanation": "Whether to install the latest SDK by default in AwsCustomResource"
+          },
+          "@aws-cdk/aws-rds:databaseProxyUniqueResourceName": {
+            "recommendedValue": true,
+            "explanation": "Use unique resource name for Database Proxy"
+          },
+          "@aws-cdk/aws-codedeploy:removeAlarmsFromDeploymentGroup": {
+            "recommendedValue": true,
+            "explanation": "Remove CloudWatch alarms from deployment group"
+          },
+          "@aws-cdk/aws-apigateway:authorizerChangeDeploymentLogicalId": {
+            "recommendedValue": true,
+            "explanation": "Include authorizer configuration in the calculation of the API deployment logical ID."
+          },
+          "@aws-cdk/aws-ec2:launchTemplateDefaultUserData": {
+            "recommendedValue": true,
+            "explanation": "Define user data for a launch template by default when a machine image is provided."
+          },
+          "@aws-cdk/aws-secretsmanager:useAttachedSecretResourcePolicyForSecretTargetAttachments": {
+            "recommendedValue": true,
+            "explanation": "SecretTargetAttachments uses the ResourcePolicy of the attached Secret."
+          },
+          "@aws-cdk/aws-redshift:columnId": {
+            "recommendedValue": true,
+            "explanation": "Whether to use an ID to track Redshift column changes"
+          },
+          "@aws-cdk/aws-stepfunctions-tasks:enableEmrServicePolicyV2": {
+            "recommendedValue": true,
+            "explanation": "Enable AmazonEMRServicePolicy_v2 managed policies"
+          },
+          "@aws-cdk/aws-ec2:restrictDefaultSecurityGroup": {
+            "recommendedValue": true,
+            "explanation": "Restrict access to the VPC default security group"
+          },
+          "@aws-cdk/aws-apigateway:requestValidatorUniqueId": {
+            "recommendedValue": true,
+            "explanation": "Generate a unique id for each RequestValidator added to a method"
+          },
+          "@aws-cdk/aws-kms:aliasNameRef": {
+            "recommendedValue": true,
+            "explanation": "KMS Alias name and keyArn will have implicit reference to KMS Key"
+          },
+          "@aws-cdk/aws-kms:applyImportedAliasPermissionsToPrincipal": {
+            "recommendedValue": true,
+            "explanation": "Enable grant methods on Aliases imported by name to use kms:ResourceAliases condition"
+          },
+          "@aws-cdk/aws-autoscaling:generateLaunchTemplateInsteadOfLaunchConfig": {
+            "recommendedValue": true,
+            "explanation": "Generate a launch template when creating an AutoScalingGroup"
+          },
+          "@aws-cdk/core:includePrefixInUniqueNameGeneration": {
+            "recommendedValue": true,
+            "explanation": "Include the stack prefix in the stack name generation process"
+          },
+          "@aws-cdk/aws-efs:denyAnonymousAccess": {
+            "recommendedValue": true,
+            "explanation": "EFS denies anonymous clients accesses"
+          },
+          "@aws-cdk/aws-opensearchservice:enableOpensearchMultiAzWithStandby": {
+            "recommendedValue": true,
+            "explanation": "Enables support for Multi-AZ with Standby deployment for opensearch domains"
+          },
+          "@aws-cdk/aws-lambda-nodejs:useLatestRuntimeVersion": {
+            "recommendedValue": true,
+            "explanation": "Enables aws-lambda-nodejs.Function to use the latest available NodeJs runtime as the default"
+          },
+          "@aws-cdk/aws-efs:mountTargetOrderInsensitiveLogicalId": {
+            "recommendedValue": true,
+            "explanation": "When enabled, mount targets will have a stable logicalId that is linked to the associated subnet."
+          },
+          "@aws-cdk/aws-rds:auroraClusterChangeScopeOfInstanceParameterGroupWithEachParameters": {
+            "recommendedValue": true,
+            "explanation": "When enabled, a scope of InstanceParameterGroup for AuroraClusterInstance with each parameters will change."
+          },
+          "@aws-cdk/aws-appsync:useArnForSourceApiAssociationIdentifier": {
+            "recommendedValue": true,
+            "explanation": "When enabled, will always use the arn for identifiers for CfnSourceApiAssociation in the GraphqlApi construct rather than id."
+          },
+          "@aws-cdk/aws-rds:preventRenderingDeprecatedCredentials": {
+            "recommendedValue": true,
+            "explanation": "When enabled, creating an RDS database cluster from a snapshot will only render credentials for snapshot credentials."
+          },
+          "@aws-cdk/aws-codepipeline-actions:useNewDefaultBranchForCodeCommitSource": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the CodeCommit source action is using the default branch name 'main'."
+          },
+          "@aws-cdk/aws-cloudwatch-actions:changeLambdaPermissionLogicalIdForLambdaAction": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the logical ID of a Lambda permission for a Lambda action includes an alarm ID."
+          },
+          "@aws-cdk/aws-codepipeline:crossAccountKeysDefaultValueToFalse": {
+            "recommendedValue": true,
+            "explanation": "Enables Pipeline to set the default value for crossAccountKeys to false."
+          },
+          "@aws-cdk/aws-codepipeline:defaultPipelineTypeToV2": {
+            "recommendedValue": true,
+            "explanation": "Enables Pipeline to set the default pipeline type to V2."
+          },
+          "@aws-cdk/aws-kms:reduceCrossAccountRegionPolicyScope": {
+            "recommendedValue": true,
+            "explanation": "When enabled, IAM Policy created from KMS key grant will reduce the resource scope to this key only."
+          },
+          "@aws-cdk/pipelines:reduceAssetRoleTrustScope": {
+            "recommendedValue": true,
+            "explanation": "Remove the root account principal from PipelineAssetsFileRole trust policy",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-eks:nodegroupNameAttribute": {
+            "recommendedValue": true,
+            "explanation": "When enabled, nodegroupName attribute of the provisioned EKS NodeGroup will not have the cluster name prefix."
+          },
+          "@aws-cdk/aws-ec2:ebsDefaultGp3Volume": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the default volume type of the EBS volume will be GP3"
+          },
+          "@aws-cdk/aws-ecs:removeDefaultDeploymentAlarm": {
+            "recommendedValue": true,
+            "explanation": "When enabled, remove default deployment alarm settings"
+          },
+          "@aws-cdk/custom-resources:logApiResponseDataPropertyTrueDefault": {
+            "recommendedValue": false,
+            "explanation": "When enabled, the custom resource used for `AwsCustomResource` will configure the `logApiResponseData` property as true by default"
+          },
+          "@aws-cdk/aws-s3:keepNotificationInImportedBucket": {
+            "recommendedValue": false,
+            "explanation": "When enabled, Adding notifications to a bucket in the current stack will not remove notification from imported stack."
+          },
+          "@aws-cdk/aws-stepfunctions-tasks:useNewS3UriParametersForBedrockInvokeModelTask": {
+            "recommendedValue": true,
+            "explanation": "When enabled, use new props for S3 URI field in task definition of state machine for bedrock invoke model.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/core:explicitStackTags": {
+            "recommendedValue": true,
+            "explanation": "When enabled, stack tags need to be assigned explicitly on a Stack."
+          },
+          "@aws-cdk/aws-ecs:reduceEc2FargateCloudWatchPermissions": {
+            "recommendedValue": true,
+            "explanation": "When enabled, we will only grant the necessary permissions when users specify cloudwatch log group through logConfiguration"
+          },
+          "@aws-cdk/aws-dynamodb:resourcePolicyPerReplica": {
+            "recommendedValue": true,
+            "explanation": "When enabled will allow you to specify a resource policy per replica, and not copy the source table policy to all replicas"
+          },
+          "@aws-cdk/aws-ec2:ec2SumTImeoutEnabled": {
+            "recommendedValue": true,
+            "explanation": "When enabled, initOptions.timeout and resourceSignalTimeout values will be summed together."
+          },
+          "@aws-cdk/aws-appsync:appSyncGraphQLAPIScopeLambdaPermission": {
+            "recommendedValue": true,
+            "explanation": "When enabled, a Lambda authorizer Permission created when using GraphqlApi will be properly scoped with a SourceArn."
+          },
+          "@aws-cdk/aws-rds:setCorrectValueForDatabaseInstanceReadReplicaInstanceResourceId": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the value of property `instanceResourceId` in construct `DatabaseInstanceReadReplica` will be set to the correct value which is `DbiResourceId` instead of currently `DbInstanceArn`"
+          },
+          "@aws-cdk/core:cfnIncludeRejectComplexResourceUpdateCreatePolicyIntrinsics": {
+            "recommendedValue": true,
+            "explanation": "When enabled, CFN templates added with `cfn-include` will error if the template contains Resource Update or Create policies with CFN Intrinsics that include non-primitive values."
+          },
+          "@aws-cdk/aws-lambda-nodejs:sdkV3ExcludeSmithyPackages": {
+            "recommendedValue": true,
+            "explanation": "When enabled, both `@aws-sdk` and `@smithy` packages will be excluded from the Lambda Node.js 18.x runtime to prevent version mismatches in bundled applications."
+          },
+          "@aws-cdk/aws-stepfunctions-tasks:fixRunEcsTaskPolicy": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the resource of IAM Run Ecs policy generated by SFN EcsRunTask will reference the definition, instead of constructing ARN."
+          },
+          "@aws-cdk/aws-ec2:bastionHostUseAmazonLinux2023ByDefault": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the BastionHost construct will use the latest Amazon Linux 2023 AMI, instead of Amazon Linux 2."
+          },
+          "@aws-cdk/core:aspectStabilization": {
+            "recommendedValue": true,
+            "explanation": "When enabled, a stabilization loop will be run when invoking Aspects during synthesis.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-route53-targets:userPoolDomainNameMethodWithoutCustomResource": {
+            "recommendedValue": true,
+            "explanation": "When enabled, use a new method for DNS Name of user pool domain target without creating a custom resource."
+          },
+          "@aws-cdk/aws-elasticloadbalancingV2:albDualstackWithoutPublicIpv4SecurityGroupRulesDefault": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the default security group ingress rules will allow IPv6 ingress from anywhere"
+          },
+          "@aws-cdk/aws-iam:oidcRejectUnauthorizedConnections": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the default behaviour of OIDC provider will reject unauthorized connections"
+          },
+          "@aws-cdk/core:enableAdditionalMetadataCollection": {
+            "recommendedValue": true,
+            "explanation": "When enabled, CDK will expand the scope of usage data collected to better inform CDK development and improve communication for security concerns and emerging issues."
+          },
+          "@aws-cdk/aws-lambda:createNewPoliciesWithAddToRolePolicy": {
+            "recommendedValue": false,
+            "explanation": "[Deprecated] When enabled, Lambda will create new inline policies with AddToRolePolicy instead of adding to the Default Policy Statement"
+          },
+          "@aws-cdk/aws-s3:setUniqueReplicationRoleName": {
+            "recommendedValue": true,
+            "explanation": "When enabled, CDK will automatically generate a unique role name that is used for s3 object replication."
+          },
+          "@aws-cdk/pipelines:reduceStageRoleTrustScope": {
+            "recommendedValue": true,
+            "explanation": "Remove the root account principal from Stage addActions trust policy",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-events:requireEventBusPolicySid": {
+            "recommendedValue": true,
+            "explanation": "When enabled, grantPutEventsTo() will use resource policies with Statement IDs for service principals."
+          },
+          "@aws-cdk/core:aspectPrioritiesMutating": {
+            "recommendedValue": true,
+            "explanation": "When set to true, Aspects added by the construct library on your behalf will be given a priority of MUTATING."
+          },
+          "@aws-cdk/aws-dynamodb:retainTableReplica": {
+            "recommendedValue": true,
+            "explanation": "When enabled, table replica will be default to the removal policy of source table unless specified otherwise."
+          },
+          "@aws-cdk/cognito:logUserPoolClientSecretValue": {
+            "recommendedValue": false,
+            "explanation": "When disabled, the value of the user pool client secret will not be logged in the custom resource lambda function logs."
+          },
+          "@aws-cdk/pipelines:reduceCrossAccountActionRoleTrustScope": {
+            "recommendedValue": true,
+            "explanation": "When enabled, scopes down the trust policy for the cross-account action role",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-stepfunctions:useDistributedMapResultWriterV2": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the resultWriterV2 property of DistributedMap will be used insted of resultWriter"
+          },
+          "@aws-cdk/s3-notifications:addS3TrustKeyPolicyForSnsSubscriptions": {
+            "recommendedValue": true,
+            "explanation": "Add an S3 trust policy to a KMS key resource policy for SNS subscriptions."
+          },
+          "@aws-cdk/aws-ec2:requirePrivateSubnetsForEgressOnlyInternetGateway": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the EgressOnlyGateway resource is only created if private subnets are defined in the dual-stack VPC."
+          },
+          "@aws-cdk/aws-ec2-alpha:useResourceIdForVpcV2Migration": {
+            "recommendedValue": false,
+            "explanation": "When enabled, use resource IDs for VPC V2 migration"
+          },
+          "@aws-cdk/aws-s3:publicAccessBlockedByDefault": {
+            "recommendedValue": true,
+            "explanation": "When enabled, setting any combination of options for BlockPublicAccess will automatically set true for any options not defined."
+          },
+          "@aws-cdk/aws-lambda:useCdkManagedLogGroup": {
+            "recommendedValue": true,
+            "explanation": "When enabled, CDK creates and manages loggroup for the lambda function"
+          },
+          "@aws-cdk/aws-elasticloadbalancingv2:networkLoadBalancerWithSecurityGroupByDefault": {
+            "recommendedValue": true,
+            "explanation": "When enabled, Network Load Balancer will be created with a security group by default."
+          },
+          "@aws-cdk/aws-stepfunctions-tasks:httpInvokeDynamicJsonPathEndpoint": {
+            "recommendedValue": true,
+            "explanation": "When enabled, allows using a dynamic apiEndpoint with JSONPath format in HttpInvoke tasks.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-ecs-patterns:uniqueTargetGroupId": {
+            "recommendedValue": true,
+            "explanation": "When enabled, ECS patterns will generate unique target group IDs to prevent conflicts during load balancer replacement"
+          },
+          "@aws-cdk/aws-route53-patterns:useDistribution": {
+            "recommendedValue": true,
+            "explanation": "Use the `Distribution` resource instead of `CloudFrontWebDistribution`"
+          }
+        }
+      }
+    }
+  },
+  "minimumCliVersion": "2.1033.0"
+}

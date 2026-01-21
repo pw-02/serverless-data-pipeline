@@ -1,0 +1,34 @@
+{
+  "version": "48.0.0",
+  "files": {
+    "5bbc02b4447b113cfe977a5e1abdd992a1795abc8280356ec46397761e8a872d": {
+      "displayName": "Func000/Code",
+      "source": {
+        "path": "asset.5bbc02b4447b113cfe977a5e1abdd992a1795abc8280356ec46397761e8a872d",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region-de620512": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "5bbc02b4447b113cfe977a5e1abdd992a1795abc8280356ec46397761e8a872d.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "a5f3b103ffcb720b3552eb0f55c2c5fa84ebaf4c9e306b80391c29a634105db1": {
+      "displayName": "CacheTestStack Template",
+      "source": {
+        "path": "CacheTestStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region-b7ee3352": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "a5f3b103ffcb720b3552eb0f55c2c5fa84ebaf4c9e306b80391c29a634105db1.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
